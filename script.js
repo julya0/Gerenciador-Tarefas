@@ -102,7 +102,7 @@ async function mostrarTarefas() {
         document.querySelectorAll(".deletar").forEach((item, index) => {
 
             item.onclick = () => {
-                deletar(respost[index].id);
+                deletar(resposta[index].id);
                 const divPai = item.parentElement.parentElement;
                 divPai.remove();
             }
