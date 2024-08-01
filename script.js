@@ -304,10 +304,7 @@ function mostrarModalEditar(todo, pai) {
     mudarTitulo.value = todo.title;
     mudarDescricao.value = todo.descricao;
     console.log(todo.title, todo.descricao);
-
-    document.querySelector(".id-editar").innerHTML = `ID: ${todo.id}`;
-    document.querySelector(".user-editar").innerHTML = `Usuário: ${todo.userId}`;
-
+    
     document.querySelector(".atualizar").onclick = () => {
         const novoDado = {
             id: todo.id,
